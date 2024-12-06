@@ -152,5 +152,5 @@
   /* 定义字体样式(斜体/非斜体) */
   font-style: normal;
   /* 定义显示样式 */
-  font-display: swap;
+  font-display: block;
 }
