@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Binary Tree</title>
+      <link href="/2025/03/11/Data-Structure.html"/>
+      <url>/2025/03/11/Data-Structure.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="二叉树的概念"><a href="#二叉树的概念" class="headerlink" title="二叉树的概念"></a>二叉树的概念</h1><h2 id="二叉树"><a href="#二叉树" class="headerlink" title="二叉树"></a>二叉树</h2><ul><li>二叉树的唯一条件是每个节点最多只能有两个子节点（可以只有一个）</li><li>没有子节点的节点被称为leaf node</li><li>二叉树的唯一条件是一个节点不能有超过两个的子节点</li><li>一个节点的深度定义为从根节点到该节点的路径长度</li><li>第$i$层的最大节点数为 $2^i$</li><li>二叉树的高度是从根到叶子的最长路径（边的数量），即只有一个节点的树高度为0，空树的高度为-1</li></ul><h2 id="树的类型"><a href="#树的类型" class="headerlink" title="树的类型"></a>树的类型</h2><h3 id="Strict-x2F-Proper-Binary-Tree-严格二叉树"><a href="#Strict-x2F-Proper-Binary-Tree-严格二叉树" class="headerlink" title="Strict&#x2F;Proper Binary Tree 严格二叉树"></a>Strict&#x2F;Proper Binary Tree 严格二叉树</h3><p>each node can have <strong>either 0 or 2</strong> children 每个节点只能有2个或0个子节点</p><h3 id="Complete-Binary-Tree-完全二叉树"><a href="#Complete-Binary-Tree-完全二叉树" class="headerlink" title="Complete Binary Tree 完全二叉树"></a>Complete Binary Tree 完全二叉树</h3><p>all level except possibly the last are completely filled and all nodes are left as possible(<strong>最后一层节点必须向左填充，其他层节点均填满</strong>)<br><img src="/2025/03/11/Data-Structure/completeBinaryTree.png" alt="completeBinaryTree"></p><h3 id="Perfect-Binary-Tree-完美二叉树"><a href="#Perfect-Binary-Tree-完美二叉树" class="headerlink" title="Perfect Binary Tree 完美二叉树"></a>Perfect Binary Tree 完美二叉树</h3><p>all levels will be completely filled<br>所有节点的数量为$2^{h+1}-1 &#x3D; 2^{(numbers Of Levels)}-1$，h为高度，此处为3<br><img src="/2025/03/11/Data-Structure/perfectBinaryTree.png" alt="perfectBinaryTree"><br>n个节点的完美二叉树的高度是多少？<br>$h &#x3D; int(log_2^{n+1}-1)$<br>Height of complete binary tree with n nodes n个节点的完全二叉树的高度为<br>$h &#x3D; log_2^n$<br>很多操作的时间复杂度取决于树的高度，因此我们希望树的高度尽可能低，或者说<strong>保持二叉树尽可能平衡</strong><br>Height of the tree will be  less if the tree will be dense,if the tree will be close to a perfect binary tree or complete binary tree（树如果较为密集的话书的高度就会相对较小，就会更为靠近完美或完全二叉树）<br>对于一个完美二叉树或完全二叉树来说，时间复杂度将会是$O(log^n)$，n为节点数，对于sparse稀疏二二润茶叔，时间复杂度为$O(n)$，类似数组和链表<br><img src="/2025/03/11/Data-Structure/timeCompelexity.png" alt="timeCompelexity"></p><h3 id="Balanced-binary-tree"><a href="#Balanced-binary-tree" class="headerlink" title="Balanced binary tree"></a>Balanced binary tree</h3><p>对于每一个节点，左子树和右子树之间的高度不大于k，大多数时候k&#x3D;1<br>高度差 $diff &#x3D; |hleft - hright|$<br><img src="/2025/03/11/Data-Structure/heightDiff.jpg" alt="heightDiff"><br>这里对于红色节点来说，左子树的高度是1，右子树为空，高度为-1，因此高度差为2<br><img src="/2025/03/11/Data-Structure/image-20250314144337270.png" alt="image-20250314144337270" style="zoom:50%;"><br>二叉树的实现：<br>a)链表：动态的创建节点，通过指针来链接<br>b)数组（用heaps来实现）：常被用做complete binary tree，如下图绿色标号，从上到下从左到右依次编号索引 ，依次填入数组中<br>对于一个在数组中索引为i的节点来说：<br>左子节点的索引为$2i+1$，右子节点的索引为$2i+2$<br><img src="/2025/03/11/Data-Structure/image-20250314200551008.png" alt="image-20250314200551008"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 数据结构 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>clion&amp;cubemax setting</title>
       <link href="/2024/12/07/clion-cubemax-setting.html"/>
       <url>/2024/12/07/clion-cubemax-setting.html</url>
